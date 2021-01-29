@@ -1,0 +1,11 @@
+Esercizio di oggi ( e del weekend ) sara' quello di avviare un nuovo repo di nome laravel-base-crud e implementare le funzioni di Create e Retrieve per gestire le prenotazioni di un hotel (semplificato)
+
+- Inizializzare un nuovo progetto Laravel
+- Creare un nuovo DB nel vostro server MySQL e connetterlo al progetto ( tramite configurazione )
+- Inizializzare una tabella nel DB tramite una migration (sfruttate le informazioni presenti nel file in allegato) e importate i dati condivisi
+- Inizializzare un model per quella tabella
+- Inizializzare un controller con tutti i metodi per gestire il modello appena creato ( resource )
+- Connettere i metodi del controller alle rotte appropriate
+- Creare una vista di base ed estenderla con le viste necessarie all'utente per: vedere tutti i dati nella tabella, selezionare un elemento e vedere i dettagli, creare un nuovo elemento ( vi lascio liberi di implementare i dettagli di navigazione del sito e lo stile )
+
+In pratica, quello che abbiamo visto oggi a lezione :slightly_smiling_face: Lunedi estenderemo questo progetto con le accortezze mancanti sulla validazione e chiuderemo il giro sulle CRUD.
