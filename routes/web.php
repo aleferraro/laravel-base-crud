@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('booking.index');
-});
+Route::get('/', 'BookingController@index');
 
 
 Route::resource('booking', 'BookingController');

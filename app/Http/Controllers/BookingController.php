@@ -25,8 +25,8 @@ class BookingController extends Controller
 
         $columns = [
             'id' => '#',
-            'guest_full_name' => 'Guest',
-            'room' => 'Room',
+            'guest_full_name' => 'Ospite',
+            'room' => 'Stanza',
         ];
 
 
@@ -42,6 +42,7 @@ class BookingController extends Controller
     public function create()
     {
         //
+        return view('booking.create');
     }
 
     /**
@@ -53,6 +54,19 @@ class BookingController extends Controller
     public function store(Request $request)
     {
         //
+        $booking = new Booking;
+
+        $booking->guest_full_name = $request->guest_full_name;
+        $booking->guest_credit_card = $request->guest_credit_card;
+        $booking->room = $request->room;
+        $booking->from_date = $request->from_date;
+        $booking->to_date = $request->to_date;
+        $booking->more_details = $request->more_details;
+
+        $booking->save();
+
+        return view('booking.store');
+
     }
 
     /**

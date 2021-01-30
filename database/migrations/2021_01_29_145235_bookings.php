@@ -22,6 +22,7 @@ class Bookings extends Migration
             $table->string('from_date');
             $table->string('to_date');
             $table->mediumText('more_details');
+            $table->timestamps();
 
         });
     }
