@@ -14,6 +14,7 @@
                             <th scope="col">{{ $col_val }}</th>
                         @endforeach
                         <th scope="col"></th>
+                        <th scope="col"></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -23,7 +24,7 @@
                             <td>{{ $booking->guest_full_name }}</td> 
                             <td>{{ $booking->room }}</td> 
                             <td><a href="{{ route('booking.show', $booking->id ) }}">Vedi Dettagli</a></td>
-
+                            <td><a href="{{ route('booking.edit', $booking->id ) }}">Modifica Prenotazione</a></td>
                         </tr>
                     @endforeach
                 </tbody>

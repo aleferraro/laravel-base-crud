@@ -9,3 +9,9 @@ Esercizio di oggi ( e del weekend ) sara' quello di avviare un nuovo repo di nom
 - Creare una vista di base ed estenderla con le viste necessarie all'utente per: vedere tutti i dati nella tabella, selezionare un elemento e vedere i dettagli, creare un nuovo elemento ( vi lascio liberi di implementare i dettagli di navigazione del sito e lo stile )
 
 In pratica, quello che abbiamo visto oggi a lezione :slightly_smiling_face: Lunedi estenderemo questo progetto con le accortezze mancanti sulla validazione e chiuderemo il giro sulle CRUD.
+
+
+---------------------------------------------------------------------
+
+
+Ciao ragazzi! L'esercizio di oggi e' realizzare un flusso di validazione sui dati in entrata ( decidete quali vincoli sono necessari per obbligare l'utente ad inserire informazioni valide ) e di conferire all'utente la possibilita' di modificare un elemento gia presente nel DB; in pratica quello che abbiamo fatto oggi. Usate lo stesso progetto laravel-base-crud
