@@ -15,6 +15,7 @@
                         @endforeach
                         <th scope="col"></th>
                         <th scope="col"></th>
+                        <th scope="col"></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -25,6 +26,13 @@
                             <td>{{ $booking->room }}</td> 
                             <td><a href="{{ route('booking.show', $booking->id ) }}">Vedi Dettagli</a></td>
                             <td><a href="{{ route('booking.edit', $booking->id ) }}">Modifica Prenotazione</a></td>
+                            <td>
+                                <form action="{{ route('booking.destroy', $booking->id ) }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit">Elimina Prenotazione</button>
+                                </form>
+                            </td>
                         </tr>
                     @endforeach
                 </tbody>

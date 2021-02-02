@@ -150,6 +150,8 @@ class BookingController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Booking::destroy($id);
+
+        return view('booking.destroy');
     }
 }
